@@ -32,5 +32,11 @@ public class application {
                 list) {
             System.out.println(obj);
         }
+
+        System.out.println("****************************");
+        System.out.println("=== TEST 4: seller insert ==== ");
+        Seller newSeller = new Seller(null, "Abdullah", "abdullah@gmail.com", new Date(), 4000.0, department);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! new id = " + newSeller.getId());
     }
 }
